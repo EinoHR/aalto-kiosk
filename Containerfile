@@ -8,7 +8,7 @@ FROM ghcr.io/ublue-os/base-nvidia:${FEDORA_MAJOR_VERSION}
 COPY etc /etc
 
 RUN rpm-ostree override remove firefox firefox-langpacks && \
-    rpm-ostree install xorg-x11-xinit xorg-x11-server-Xorg openbox && \
+    rpm-ostree install xorg-x11-xinit xorg-x11-server-Xorg openbox xterm && \
     sed -i 's/#AutomaticUpdatePolicy.*/AutomaticUpdatePolicy=stage/' /etc/rpm-ostreed.conf && \
     rm -rf \
         /tmp/* \
