@@ -1,1 +1,1 @@
-exec xterm
+exec mycelium.sh
