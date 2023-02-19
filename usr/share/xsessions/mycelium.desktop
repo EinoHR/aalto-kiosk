@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Mycelium
 Comment=Fullscreen java mycelium
-Exec=/usr/local/bin/mycelium.sh
-TryExec=/usr/local/bin/mycelium.sh
+Exec=/usr/bin/mycelium.sh
+TryExec=/usr/bin/mycelium.sh
 Type=Application
