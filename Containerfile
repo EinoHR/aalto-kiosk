@@ -6,6 +6,7 @@ FROM ghcr.io/ublue-os/base-nvidia:${FEDORA_MAJOR_VERSION}
 # See https://pagure.io/releng/issue/11047 for final location
 
 COPY etc /etc
+COPY usr /usr
 COPY mycelium /usr/bin
 
 RUN rpm-ostree override remove firefox firefox-langpacks && \
