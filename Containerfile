@@ -13,6 +13,7 @@ RUN rpm-ostree override remove firefox firefox-langpacks && \
     rpm-ostree install xorg-x11-xinit xorg-x11-server-Xorg lightdm openbox xterm java-11-openjdk && \
     chmod +x /usr/mycelium/mycelium.sh && \
     chmod +x /usr/mycelium/dbclient && \
+    sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target && \
     sed -i 's/#AutomaticUpdatePolicy.*/AutomaticUpdatePolicy=stage/' /etc/rpm-ostreed.conf && \
     rm -rf \
         /tmp/* \
