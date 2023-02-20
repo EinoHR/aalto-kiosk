@@ -10,7 +10,7 @@ COPY usr /usr
 COPY mycelium /usr/bin
 
 RUN rpm-ostree override remove firefox firefox-langpacks && \
-    rpm-ostree install xorg-x11-xinit xorg-x11-server-Xorg lightdm openbox xterm java-11-openjdk && \
+    rpm-ostree install xorg-x11-xinit xorg-x11-server-Xorg lightdm openbox xterm java-11-openjdk-devel && \
     chmod +x /usr/bin/mycelium.sh && \
     sed -i 's/#AutomaticUpdatePolicy.*/AutomaticUpdatePolicy=stage/' /etc/rpm-ostreed.conf && \
     rm -rf \
