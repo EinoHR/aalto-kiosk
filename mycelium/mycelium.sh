@@ -15,3 +15,6 @@ cd /usr/mycelium
         sleep 1
     done
 ) &> /var/home/mycelium/mycelium.log
+
+sleep 2
+execstack -c /var/home/mycelium/.jSerialComm/2.9.3/libjSerialComm.so

@@ -10,7 +10,7 @@ COPY usr /usr
 COPY mycelium /usr/mycelium
 
 RUN rpm-ostree override remove firefox firefox-langpacks && \
-    rpm-ostree install xorg-x11-xinit xorg-x11-server-Xorg lightdm openbox xterm java-11-openjdk && \
+    rpm-ostree install xorg-x11-xinit xorg-x11-server-Xorg lightdm openbox xterm java-11-openjdk execstack && \
     chmod +x /usr/mycelium/mycelium.sh && \
     chmod +x /usr/mycelium/dbclient && \
     chgrp -R wheel /usr/mycelium/ && \
