@@ -12,4 +12,4 @@ cd /usr/mycelium
         echo "Java crashed with exit code $?.  Respawning.." >&2
         sleep 1
     done
-) &> /var/log/mycelium.log
+) &> /var/home/mycelium/mycelium.log
