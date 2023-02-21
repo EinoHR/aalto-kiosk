@@ -1,3 +1,5 @@
+xset s off
+
 cd /usr/mycelium
 
 (
