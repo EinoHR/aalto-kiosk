@@ -1,6 +1,14 @@
 ## cmds
-* grep -E '^dialout:' usr/lib/group >> /etc/group
-* sudo usermod -a -G dialout mycelium
+```
+grep -E '^dialout:' /usr/lib/group >> /etc/group
+sudo usermod -a -G dialout mycelium
+
+grep -E '^lock:' /usr/lib/group >> /etc/group
+sudo usermod -a -G lock mycelium
+
+grep -E '^tty:' /usr/lib/group >> /etc/group
+sudo usermod -a -G tty mycelium
+```
 
 # base
 
