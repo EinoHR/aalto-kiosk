@@ -1,3 +1,7 @@
+## cmds
+* grep -E '^dialout:' usr/lib/group >> /etc/group
+* sudo usermod -a -G dialout mycelium
+
 # base
 
 [![build-ublue](https://github.com/ublue-os/base/actions/workflows/build.yml/badge.svg)](https://github.com/ublue-os/base/actions/workflows/build.yml)
