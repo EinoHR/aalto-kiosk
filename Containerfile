@@ -15,7 +15,7 @@ RUN rpm-ostree override remove firefox firefox-langpacks && \
     chmod +x /usr/mycelium/dbclient && \
     chgrp -R wheel /usr/mycelium/ && \
     chmod -R ugo+rw /usr/mycelium/ && \
-    grep -E '^dialout:' /usr/lib/group >> /etc/group && \
+    grep -E '^dialout:' usr/lib/group >> /etc/group && \
     sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target && \
     sed -i 's/#AutomaticUpdatePolicy.*/AutomaticUpdatePolicy=stage/' /etc/rpm-ostreed.conf && \
     rm -rf \
