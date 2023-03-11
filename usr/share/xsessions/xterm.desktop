@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=xterm
-Comment=Fullscreen xterm
-Exec=/usr/bin/xterm
-TryExec=/usr/bin/xterm
-Type=Application
