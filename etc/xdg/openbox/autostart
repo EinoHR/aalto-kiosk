@@ -1,1 +1,1 @@
-/usr/mycelium/mycelium.sh &
+/usr/bin/myceliumupdate.sh &> /var/home/mycelium/myceliumupdate.log &
