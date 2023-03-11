@@ -7,7 +7,8 @@ else
 fi
 
 cd mycelium
-git fetch
+git fetch --all
+git reset --hard origin/main
 
 chmod +x mycelium.sh
 chmod +x dbclient
