@@ -15,4 +15,4 @@
     chmod +x dbclient
 ) &> /var/home/mycelium/myceliumupdate.log
 
-./mycelium.sh
+~/mycelium/mycelium.sh
